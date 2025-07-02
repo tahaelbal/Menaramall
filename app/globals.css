@@ -1,0 +1,50 @@
+@import "tailwindcss";
+
+@theme  {
+    --font-primary: 'WorkSans-Variable', sans-serif;
+    --color-primary: #6F0E18; /* Example primary color */
+}
+
+.rounded-full-css {
+  clip-path:ellipse(60% 100% at 50% -10%)
+}
+
+@font-face {
+  font-family: 'GeneralSans-Variable';
+  src: url('/fonts/GeneralSans-Variable.woff2') format('woff2'),
+       url('/fonts/GeneralSans-Variable.woff') format('woff'),
+       url('/fonts/GeneralSans-Variable.ttf') format('truetype');
+  font-weight: 200 700;
+  font-display: swap;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'WorkSans-Variable';
+  src: url('/fonts/WorkSans-Variable.woff2') format('woff2'),
+       url('/fonts/WorkSans-Variable.woff') format('woff'),
+       url('/fonts/WorkSans-Variable.ttf') format('truetype');
+  font-weight: 100 900;
+  font-display: swap;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Satoshi-Variable';
+  src: url('/fonts/Satoshi-Variable.woff2') format('woff2'),
+       url('/fonts/Satoshi-Variable.woff') format('woff'),
+       url('/fonts/Satoshi-Variable.ttf') format('truetype');
+  font-weight: 300 900;
+  font-display: swap;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Kalam-Variable';
+  src: url('/fonts/Kalam-Variable.woff2') format('woff2'),
+       url('/fonts/Kalam-Variable.woff') format('woff'),
+       url('/fonts/Kalam-Variable.ttf') format('truetype');
+  font-weight: 300 700;
+  font-display: swap;
+  font-style: normal;
+}
