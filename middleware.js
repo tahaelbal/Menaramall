@@ -4,7 +4,7 @@ import { withAuth } from "next-auth/middleware";
 export default withAuth({
   // Rediriger si non connecté
   pages: {
-    signIn: "/admin/signin", // vers où rediriger les users non connectés
+    signIn: "/signin", // vers où rediriger les users non connectés
   },
 });
 
