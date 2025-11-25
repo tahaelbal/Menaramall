@@ -85,7 +85,18 @@ export default function Footer() {
       {/* Bas de page */}
       <div className="bg-[#6F0E18] text-white text-center py-4 text-sm">
         © {new Date().getFullYear()} Menara Mall Marrakech. Tous droits réservés.
+        
+        Made by{" "}
+        <a
+          href="https://www.linkedin.com/in/taha-el-bal-247005293/"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="underline hover:text-gray-300"
+        >
+          Taha El Bal
+        </a>
       </div>
+
     </footer>
   );
 }
