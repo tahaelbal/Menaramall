@@ -4,8 +4,9 @@ import { useRef, useEffect, useState } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 
-import RubanPellicule from "./RubanPellicule";
-import VortexLumineux from "./VortexLumineux";
+import RubanPellicule from "./rubanPellicule";
+import VortexLumineux from "./vortexLumineux";
+
 import { GiClapperboard } from "react-icons/gi";
 
 gsap.registerPlugin(ScrollTrigger);
