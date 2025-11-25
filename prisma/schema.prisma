@@ -1,0 +1,59 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "mysql"
+  url      = env("DATABASE_URL")
+}
+
+model Kidzo {
+  id          Int      @id @default(autoincrement())
+  title       String
+  description String
+  imageUrl    String
+  createdAt   DateTime @default(now())
+}
+
+model Souk {
+  id          String   @id @default(cuid())
+  title       String
+  description String
+  imageUrl    String
+}
+
+model Restaurant {
+  id          Int    @id @default(autoincrement())
+  title       String
+  description String
+  imageUrl    String
+}
+
+model Shopping {
+  id          Int    @id @default(autoincrement())
+  title       String
+  description String
+  imageUrl    String
+  categorie   String?
+}
+
+model User {
+  id       Int     @id @default(autoincrement())
+  name     String?
+  email    String  @unique
+  image    String?
+  password String
+}
+model PasswordResetToken {
+  id        Int      @id @default(autoincrement())
+  email     String
+  token     String   @unique
+  expires   DateTime
+  createdAt DateTime @default(now())
+}
+
+
+
+
+
+
