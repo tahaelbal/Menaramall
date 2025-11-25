@@ -3,10 +3,11 @@
 import { useState, useEffect } from "react";
 
 import SoukExperience from "@/components/souk/soukExperience";
-import SoukSlider from "@/components/souk/SoukSlider";
+import SoukSlider from "@/components/souk/soukSlider";
 import Footer from "@/components/footer";
 import Navbar from "@/components/navbar";
 import SoukMap from "@/components/souk/soukMap";
+
 
 export default function SoukPage() {
   const [loading, setLoading] = useState(true);

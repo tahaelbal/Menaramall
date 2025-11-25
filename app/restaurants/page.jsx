@@ -2,7 +2,7 @@
 
 import { useState, useEffect } from "react";
 
-import RestaurantSlider from "@/components/restaurants/RestaurantSlider";
+import RestaurantSlider from "@/components/restaurants/restaurantSlider";
 import Footer from "@/components/footer";
 import Navbar from "@/components/navbar";
 

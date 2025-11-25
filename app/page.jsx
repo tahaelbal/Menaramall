@@ -6,12 +6,13 @@ import ChiffreDaffaire from "@/components/index/chiffreDaffaire";
 import Header from "@/components/index/header";
 import SactionGrid from "@/components/index/sactionGrid";
 import LogoScroll from "@/tools/logoScroll";
-import ShoppingSection from "@/components/index/ShoppingSection";
-import KidzoSection from "@/components/index/kidzoSection"; 
-import RestauSection from "@/components/index/RestauSection";
-import MapSection from "@/components/index/MapSection";
+import ShoppingSection from "@/components/index/shoppingSection";
+import KidzoSection from "@/components/index/kidzoSection";
+import RestauSection from "@/components/index/restauSection";
+import MapSection from "@/components/index/mapSection";
 import Navbar from "@/components/navbar";
 import Footer from "@/components/footer";
+
 
 export default function Home() {
   const [loading, setLoading] = useState(true);
