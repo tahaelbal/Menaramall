@@ -12,7 +12,7 @@ const services = [
     { icon: <Utensils size={40} />, label: "Restauration" },
     { icon: <ShoppingBag size={40} />, label: "Mode & Bijoux" },
     { icon: <Gamepad2 size={40} />, label: "Kidzo" },
-    { icon: <Store size={40} />, label: "Le Souk Marocain" },
+    { icon: <Store size={40} />, label: "Le SouQ Al Madinah" },
     { icon: <Sparkles size={40} />, label: "BEAUTÉ & BIEN-ÊTRE" },
     { icon: <TabletSmartphone size={40} />, label: "High-Tech & Accessoires" },
     { icon: <Image src={'/icon/carrefour.svg'} width={55} height={55} alt="Carrefour" />, label: "Carrefour" },
@@ -46,7 +46,16 @@ export default function SactionGrid() {
                 </div>
             </div>
             <div className="relative w-full h-screen flex items-center justify-center">
-                <img src="https://ghostwhite-goldfinch-864066.hostingersite.com/uploads/UPLODESYSTEME/images/68640dd247672_slide1-4 1.png" alt="menara mall" title="menara mall" width={1920} height={1080} className="object-cover h-full w-full absolute top-0 left-0 z-0" />
+                <Image
+                src="https://ghostwhite-goldfinch-864066.hostingersite.com/uploads/UPLODESYSTEME/images/68640dd247672_slide1-4 1.png"
+                alt="menara mall"
+                title="menara mall"
+                width={1000}
+                height={1000}
+                className="object-cover h-full w-full absolute top-0 left-0 z-0"
+                priority
+                />
+
                 <div className="absolute top-0 left-0 w-full h-full bg-black opacity-50 z-10"></div>
                 <div className="absolute top-0 left-0 w-full h-full flex flex-col items-center gap-4 justify-center z-20">
                     <h1 className="text-center text-white text-5xl font-bold uppercase ">Spectacle de Fontaines Musicales</h1>

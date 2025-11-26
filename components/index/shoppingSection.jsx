@@ -32,6 +32,7 @@ export default function ShoppingSection() {
           alt="Boutique Menara Mall"
           fill
           className="object-cover"
+         
         />
       </div>
     </section>

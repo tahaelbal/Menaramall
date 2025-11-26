@@ -7,6 +7,8 @@ import { Autoplay, EffectFade, Navigation } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/effect-fade";
 import "swiper/css/navigation";
+import Image from "next/image";
+
 
 export default function Shopping() {
   const [boutiques, setBoutiques] = useState([]);
@@ -84,11 +86,15 @@ export default function Shopping() {
           {headerImages.map((src, i) => (
             <SwiperSlide key={i}>
               <div className="relative w-full h-screen">
-                <img
-                  src={src}
-                  alt={`Shopping ${i + 1}`}
-                  className="object-cover w-full h-full"
-                />
+               <Image
+                src={src}
+                alt={`Shopping ${i + 1}`}
+                width={1920}
+                height={1080}
+                className="object-cover w-full h-full"
+                priority
+              />
+
                 <div className="absolute inset-0 bg-black opacity-55 z-10" />
                 <div className="absolute inset-0 flex flex-col items-center justify-center z-20 text-center px-4">
                   <h1 className="text-white text-5xl md:text-6xl font-bold uppercase mb-6 drop-shadow-lg">
@@ -141,11 +147,15 @@ export default function Shopping() {
                 key={boutique.id}
                 className="bg-white shadow rounded overflow-hidden hover:shadow-lg transition-shadow cursor-pointer"
               >
-                <img
-                  src={boutique.imageUrl}
-                  alt={boutique.title}
-                  className="w-full h-48 object-cover"
-                />
+               <Image
+                src={boutique.imageUrl}
+                alt={boutique.title}
+                width={800}
+                height={600}
+                className="w-full h-48 object-cover"
+              />
+
+
                 <div className="p-4">
                   <h3 className="text-xl font-semibold text-[#6F0E18]">
                     {boutique.title}

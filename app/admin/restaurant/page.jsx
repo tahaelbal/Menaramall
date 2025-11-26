@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from "react";
 import { Pencil, Trash2, Plus, X } from "lucide-react";
+import Image from "next/image";
 
 export default function RestaurantAdmin() {
   const [restaurants, setRestaurants] = useState([]);
@@ -216,9 +217,11 @@ export default function RestaurantAdmin() {
     {restaurants.map((item) => (
       <tr key={item.id} className="bg-white border-b hover:bg-gray-50 transition">
         <td className="px-6 py-4">
-          <img
+          <Image
             src={item.imageUrl}
             alt={item.title}
+            width={1000}
+            height={1000}
             className="w-24 h-14 object-cover rounded-md border"
           />
         </td>

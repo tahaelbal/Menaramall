@@ -30,10 +30,11 @@ export default function RestauSection() {
       {/* Image responsive */}
       <div className="relative w-full md:w-1/2 aspect-[16/9] md:aspect-auto">
         <Image
-          src="https://ghostwhite-goldfinch-864066.hostingersite.com/uploads/UPLODESYSTEME/images/6903a638df631_ELY10290.jpg" 
+          src="https://ghostwhite-goldfinch-864066.hostingersite.com/uploads/UPLODESYSTEME/images/6903a5d5b1d3e_ELY19958.jpg" 
           alt="Restaurants Menara Mall"
           fill
           className="object-cover"
+        
         />
       </div>
     </section>

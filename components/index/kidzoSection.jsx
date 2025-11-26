@@ -13,6 +13,7 @@ export default function KidzoSection() {
           alt="Kidzo Menara Mall"
           fill
           className="object-cover"
+          
         />
       </div>
 

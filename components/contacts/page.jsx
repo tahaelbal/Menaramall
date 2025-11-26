@@ -3,6 +3,7 @@
 import { useEffect, useState } from "react";
 import { MapPin, Phone, Mail, Facebook, Instagram } from "lucide-react";
 import Navbar from "../navbar";
+import Image from "next/image";
 
 export default function Contact() {
 
@@ -12,11 +13,15 @@ export default function Contact() {
       {/* Image d’accueil */}
     <div className="relative w-full h-[100vh] overflow-hidden">
   <div className="absolute top-0 left-0 w-full h-full bg-black opacity-55 z-10"></div>
-  <img
-    src="https://ghostwhite-goldfinch-864066.hostingersite.com/uploads/UPLODESYSTEME/images/68639ce2c18b9_slide1-1 1.png"
-    alt="Bannière Souk"
-    className="absolute top-0 left-0 w-full h-full object-cover z-0"
-  />
+<Image
+  src="https://ghostwhite-goldfinch-864066.hostingersite.com/uploads/UPLODESYSTEME/images/68639ce2c18b9_slide1-1 1.png"
+  alt="Bannière Souk"
+  width={1000}
+  height={1000}
+  className="absolute top-0 left-0 w-full h-full object-cover z-0"
+  priority
+/>
+
   <div className="absolute inset-0 z-20 flex flex-col items-center justify-center px-4 text-center">
     <h1 className="text-center text-white text-4xl sm:text-6xl md:text-8xl font-bold drop-shadow uppercase">
       Contacts
@@ -32,9 +37,9 @@ export default function Contact() {
         <div className="bg-white text-primary px-6 py-4 rounded shadow-md w-full sm:w-auto text-center">
           <span className="font-semibold">Email :</span> info@menaramall.com
         </div>
-        <div className="bg-white text-primary px-6 py-4 rounded shadow-md w-full sm:w-auto text-center">
+        {/* <div className="bg-white text-primary px-6 py-4 rounded shadow-md w-full sm:w-auto text-center">
           <span className="font-semibold">Phone :</span> +212 524 35 10 50
-        </div>
+        </div> */}
       </div>
 
       {/* Formulaire */}

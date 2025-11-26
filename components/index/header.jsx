@@ -1,11 +1,12 @@
 "use client";
-
+import Image from "next/image";
 import { Store, ChevronLeft, ChevronRight } from "lucide-react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, EffectFade, Navigation } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/effect-fade";
 import "swiper/css/navigation";
+
 
 export default function Header() {
   const images = [
@@ -31,9 +32,14 @@ export default function Header() {
         {images.map((src, i) => (
           <SwiperSlide key={i}>
             <div className="relative w-full h-screen">
-              <img
+              
+
+              <Image
                 src={src}
                 alt={`Menara Mall ${i + 1}`}
+                width={1000}
+                height={1000}
+                priority
                 className="object-cover w-full h-full"
               />
               {/* Overlay sombre */}

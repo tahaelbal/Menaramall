@@ -32,9 +32,10 @@ export default function HeroSlider() {
           L’univers magique de Kidzo ! 🎉
         </h2>
 
-        <p className="text-sm sm:text-base md:text-lg lg:text-xl leading-relaxed md:leading-loose text-gray-700 text-center max-w-full sm:max-w-xl md:max-w-2xl mx-auto">
+        {/* <p className="text-sm sm:text-base md:text-lg lg:text-xl leading-relaxed md:leading-loose text-gray-700 text-center max-w-full sm:max-w-xl md:max-w-2xl mx-auto">
           Découvrez nos jeux amusants et éducatifs pour petits et grands, adaptés à tous les âges.
-        </p>
+        </p> */}
+        
     </div>
 
 

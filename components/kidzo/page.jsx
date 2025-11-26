@@ -47,6 +47,7 @@ export default function Kidzo() {
                   alt={slide.title}
                   fill
                   className="object-cover"
+                  
                 />
                 <div className="absolute inset-0 bg-black/50 z-10"></div>
                 <div className="absolute inset-0 z-20 flex items-center justify-center text-center px-4">

@@ -12,6 +12,7 @@ import RestauSection from "@/components/index/restauSection";
 import MapSection from "@/components/index/mapSection";
 import Navbar from "@/components/navbar";
 import Footer from "@/components/footer";
+import Image from "next/image";
 
 
 export default function Home() {
@@ -33,9 +34,11 @@ export default function Home() {
           fadeOut ? "opacity-0 pointer-events-none" : "opacity-100"
         }`}
       >
-        <img
+        <Image
           src="/img/logo_red.png"
           alt="Logo Menara Mall"
+          width={1000}
+          height={96}
           className="h-24 w-auto animate-spin-slow"
         />
        

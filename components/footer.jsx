@@ -24,11 +24,11 @@ export default function Footer() {
           <h3 className="font-semibold text-lg mb-4 text-primary">Liens rapides</h3>
           <ul className="space-y-2 text-sm">
             <li><a href="/" className="hover:text-primary">Accueil</a></li>
-            <li><a href="/boutiques" className="hover:text-primary">Kidzo</a></li>
+            <li><a href="/kidzo" className="hover:text-primary">Kidzo</a></li>
             <li><a href="/souk" className="hover:text-primary">Le souq</a></li>
             <li><a href="/shopping" className="hover:text-primary">Shopping</a></li>
             <li><a href="/restaurants" className="hover:text-primary">Restaurants et cafés</a></li>
-            <li><a href="/evenements" className="hover:text-primary">Événements</a></li>
+            
             <li><a href="/contacts" className="hover:text-primary">Contact</a></li>
           </ul>
         </div>

@@ -4,6 +4,8 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, Pagination } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/pagination";
+import Image from "next/image";
+
 
 export default function VRSection() {
   const games = [
@@ -58,13 +60,15 @@ export default function VRSection() {
               transition={{ duration: 0.5, delay: i * 0.1 }}
               className="group bg-white border border-gray-100 rounded-3xl shadow-md hover:shadow-xl overflow-hidden transition-all duration-500"
             >
-              <div className="overflow-hidden">
-                <img
-                  src={game.img}
-                  alt={game.title}
-                  className="w-full h-60 object-cover transform transition-transform duration-700 group-hover:scale-110"
-                />
-              </div>
+             <div className="overflow-hidden">
+              <Image
+                src={game.img}
+                alt={game.title}
+                width={1000}
+                height={700}
+                className="w-full h-60 object-cover transform transition-transform duration-700 group-hover:scale-110"
+              />
+            </div>
               {/* <div className="p-6 text-center">
                 <h3 className="text-2xl font-semibold text-gray-800 mb-2 group-hover:text-pink-500 transition-colors duration-300">
                   {game.title}

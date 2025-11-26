@@ -42,6 +42,9 @@ export default function SoukSlider() {
                   className="object-cover"
                   priority
                 />
+                
+
+
 
                 {/* Overlay */}
                 <div className="absolute top-0 left-0 w-full h-full bg-black/50 z-10"></div>
