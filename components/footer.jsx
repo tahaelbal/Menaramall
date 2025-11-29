@@ -13,9 +13,8 @@ export default function Footer() {
             className="w-52 sm:w-60 h-auto object-contain mb-4"
           />
           <p className="text-sm leading-relaxed">
-            Bienvenue à Menara Mall, situé sur les hauteurs de l’avenue Mohammed VI. 
-            Ce tout nouvel espace dédié au shopping et aux loisirs vous ouvre ses portes 
-            pour une expérience conviviale en famille ou entre amis.
+            Bienvenue au Menara Mall, perché sur les hauteurs de l’Avenue Mohammed VI.
+            Un espace dédié au shopping, aux loisirs et aux expériences qui rassemblent.
           </p>
         </div>
 
@@ -61,10 +60,10 @@ export default function Footer() {
               <MapPin className="w-5 h-5 text-[#6F0E18]" />
               Avenue Mohamed VI, Marrakech
             </li>
-            <li className="flex items-center gap-2">
+            {/* <li className="flex items-center gap-2">
               <Phone className="w-5 h-5 text-[#6F0E18]" />
               <a href="tel:+212524351050">+212 5 24 35 10 50</a>
-            </li>
+            </li> */}
             <li className="flex items-center gap-2">
               <Mail className="w-5 h-5 text-[#6F0E18]" />
               <a href="mailto:info@menaramall.com">info@menaramall.com</a>
